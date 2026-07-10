@@ -57,15 +57,15 @@ export default function MapSection() {
                 href={`https://maps.google.com/?q=${MAP_QUERY}`}
                 target="_blank"
                 rel="noreferrer"
-                className="flex-1 rounded-full bg-brass px-6 py-3 text-center font-display text-sm font-semibold tracking-wide text-cream transition-transform hover:-translate-y-0.5 hover:bg-gold hover:text-ink"
+                className="flex flex-1 items-center justify-center rounded-full bg-brass px-6 py-3 text-center font-display text-sm font-semibold tracking-wide whitespace-nowrap text-cream transition-transform hover:-translate-y-0.5 hover:bg-gold hover:text-ink"
               >
                 Get directions
               </a>
               <a
                 href="#book"
-                className="flex-1 rounded-full border-2 border-cream/25 px-6 py-3 text-center font-display text-sm font-semibold tracking-wide text-cream transition-colors hover:border-cream/60"
+                className="flex flex-1 items-center justify-center rounded-full border-2 border-cream/25 px-6 py-3 text-center font-display text-sm font-semibold tracking-wide whitespace-nowrap text-cream transition-colors hover:border-cream/60"
               >
-                Reserve this property
+                Reserve a stay
               </a>
             </div>
           </div>
