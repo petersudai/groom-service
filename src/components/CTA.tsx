@@ -41,9 +41,6 @@ export default function CTA() {
           comes with a free nail trim, and loyalty program guests never have to remember when
           the last one was.
         </p>
-        <p className="mx-auto mt-1 max-w-xl font-caption text-lg text-gold/90 italic">
-          Primera visita, corte de uñas gratis.
-        </p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <a

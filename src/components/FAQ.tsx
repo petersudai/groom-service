@@ -5,7 +5,7 @@ import { ChevronIcon } from "./ServiceIcons";
 const FAQS = [
   {
     q: "Do you groom cats too?",
-    a: "Yes — every property is set up for both dogs and cats, with concierges trained specifically in low-stress cat handling.",
+    a: "Yes. Every property is set up for both dogs and cats, with concierges trained specifically in low-stress cat handling.",
   },
   {
     q: "What if my pet is anxious or reactive?",
@@ -13,7 +13,7 @@ const FAQS = [
   },
   {
     q: "How does the loyalty program billing work?",
-    a: "The program bills monthly to the card on file and can be paused or cancelled anytime from your account — no contracts, no cancellation fees.",
+    a: "The program bills monthly to the card on file and can be paused or cancelled anytime from your account, with no contracts and no cancellation fees.",
   },
   {
     q: "Can I bring my own shampoo or products?",

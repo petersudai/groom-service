@@ -38,7 +38,7 @@ const SERVICES: Service[] = [
   },
   {
     suite: "The Penthouse",
-    service: "Style Studio — Creative Color",
+    service: "Style Studio: Creative Color",
     copy: "Safe, pet-grade creative color and breed-bending looks for pets who like to make an entrance.",
     price: "From $95",
     icon: PaletteIcon,
@@ -87,7 +87,7 @@ export default function Services() {
           <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight md:text-5xl">Pick a suite, mix &amp; match.</h2>
           <p className="mt-4 text-ink-soft">
             Every stay is built around your pet's coat, temperament, and vibe. Here's the full
-            rate card — combine as many suites as you like.
+            rate card. Combine as many suites as you like.
           </p>
         </div>
 

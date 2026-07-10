@@ -23,15 +23,15 @@ export default function About() {
           <p className="mt-6 text-ink-soft">
             Groom Service started in 2019 when Talia Marsh, a color specialist who spent a decade
             behind a salon chair, decided pets deserved a stay as considered as any five-star
-            hotel &mdash; minus the rush, plus a lot more tail-wagging. What began as a one-chair
-            studio on Santa Monica Blvd is now a small team of Fear Free&ndash;certified
+            hotel, just without the rush and with a lot more tail-wagging. What began as a
+            one-chair studio on Santa Monica Blvd is now a small team of Fear Free&ndash;certified
             concierges, all trained under her, still working out of that same West Hollywood
             property.
           </p>
           <p className="mt-4 text-ink-soft">
-            Every pet gets handled at their own pace &mdash; slower for the nervous ones, playful
-            for the regulars &mdash; and every stylist is certified in low-stress handling before
-            they touch a single clipper.
+            Every pet gets handled at their own pace: slower for the nervous ones, playful for the
+            regulars. Every stylist is certified in low-stress handling before they touch a single
+            clipper.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">

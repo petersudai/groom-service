@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 // Sections that already surface their own booking CTA in the same bottom-right
-// corner this button occupies — surface one CTA at a time instead of stacking.
+// corner this button occupies. Surface one CTA at a time instead of stacking.
 const CLASH_SELECTORS = ["#membership", "footer"];
 
 export default function FloatingBook() {

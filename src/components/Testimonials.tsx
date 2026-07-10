@@ -23,7 +23,7 @@ const REVIEWS = [
     city: "Silver Lake, CA",
   },
   {
-    quote: "The loyalty program pays for itself. I stopped tracking appointments and just show up — they text me first.",
+    quote: "The loyalty program pays for itself. I stopped tracking appointments and just show up; they text me first.",
     name: "Owen K.",
     pet: "Peaches, Tabby cat",
     city: "Culver City, CA",

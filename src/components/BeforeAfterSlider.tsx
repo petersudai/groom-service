@@ -6,7 +6,7 @@ type Pair = {
   label: string;
 };
 
-// Same photo on both sides of the divider, on purpose — the "before" is a
+// Same photo on both sides of the divider, on purpose. The "before" is a
 // color-graded version of the identical image, not a different dog. That
 // guarantees continuity while these are sample/placeholder shots; a real
 // property would swap in matched arrival-and-departure photos of the same stay.
@@ -47,14 +47,14 @@ function Slider({ pair }: { pair: Pair }) {
     >
       <img
         src={pair.photo}
-        alt="Departure — after grooming (sample photo)"
+        alt="Departure, after grooming (sample photo)"
         className="absolute inset-0 h-full w-full object-cover saturate-[1.2] contrast-[1.08] brightness-[1.03]"
         draggable={false}
       />
       <div className="absolute inset-0 overflow-hidden" style={{ clipPath: `inset(0 ${100 - split}% 0 0)` }}>
         <img
           src={pair.photo}
-          alt="Arrival — before grooming (sample photo)"
+          alt="Arrival, before grooming (sample photo)"
           className="h-full w-full object-cover grayscale-[65%] brightness-[0.82] contrast-[0.95]"
           draggable={false}
         />
@@ -90,7 +90,7 @@ export default function BeforeAfterSlider() {
           <span className="font-mono text-xs tracking-[0.25em] text-brass-dark uppercase">Arrival &amp; Departure</span>
           <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight md:text-5xl">Drag to see the checkout glow-up.</h2>
           <p className="mt-4 text-ink-soft">
-            Sample photos shown below &mdash; every property swaps these for real arrival-and-departure
+            Sample photos shown below. Every property swaps these for real arrival-and-departure
             shots from its own guests. Slide across to see how it works.
           </p>
         </div>
