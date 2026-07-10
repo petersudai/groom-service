@@ -5,16 +5,16 @@ type Stylist = {
   role: string;
   cert: string;
   photo: string;
-  accent: "berry" | "citrus" | "sage";
+  accent: "brass" | "wine" | "sage";
 };
 
 const TEAM: Stylist[] = [
   {
     name: "Talia Marsh",
-    role: "Founder & Lead Stylist",
+    role: "Founder & General Manager",
     cert: "Fear Free Certified",
     photo: "https://images.unsplash.com/photo-1589566856690-fc68ac16845c?w=480&h=600&fit=crop&crop=faces&auto=format&q=80",
-    accent: "berry",
+    accent: "brass",
   },
   {
     name: "Marcus Ihejirika",
@@ -28,20 +28,20 @@ const TEAM: Stylist[] = [
     role: "Creative Color Artist",
     cert: "IPG Certified",
     photo: "https://images.unsplash.com/photo-1542578951838-47d40e8b4f0d?w=480&h=600&fit=crop&crop=faces&auto=format&q=80",
-    accent: "citrus",
+    accent: "wine",
   },
   {
     name: "Bella Suárez",
     role: "Puppy & Senior Care",
     cert: "Fear Free Certified",
     photo: "https://images.unsplash.com/photo-1760124146304-6a2dbafb4853?w=480&h=600&fit=crop&crop=faces&auto=format&q=80",
-    accent: "berry",
+    accent: "brass",
   },
 ];
 
 const ACCENT_BAR: Record<Stylist["accent"], string> = {
-  berry: "bg-berry",
-  citrus: "bg-citrus",
+  brass: "bg-brass",
+  wine: "bg-wine",
   sage: "bg-sage",
 };
 
@@ -50,11 +50,11 @@ export default function Team() {
     <section className="bg-cream-dim px-6 py-24 md:px-10 md:py-32">
       <div className="mx-auto max-w-6xl">
         <div className="mb-14 max-w-xl">
-          <span className="font-mono text-xs tracking-[0.25em] text-sage-dark uppercase">The Stylists</span>
+          <span className="font-mono text-xs tracking-[0.25em] text-sage-dark uppercase">The Concierge Team</span>
           <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight md:text-5xl">Trained hands, calm energy.</h2>
           <p className="mt-4 text-ink-soft">
-            Every Pawlette stylist is Fear Free&ndash;trained and certified in their specialty, from
-            deshedding to bold creative color.
+            Every Groom Service concierge is Fear Free&ndash;trained and certified in their
+            specialty, from deshedding to bold creative color.
           </p>
         </div>
 

@@ -18,14 +18,15 @@ export default function About() {
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="font-mono text-xs tracking-[0.25em] text-berry-dark uppercase">Our Story</span>
-          <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight md:text-5xl">One studio. One obsession with color.</h2>
+          <span className="font-mono text-xs tracking-[0.25em] text-brass-dark uppercase">Our Story</span>
+          <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight md:text-5xl">One property. One obsession with hospitality.</h2>
           <p className="mt-6 text-ink-soft">
-            Pawlette started in 2019 when Talia Marsh, a color specialist who spent a decade
-            behind a salon chair, decided pets deserved the same craft she gave people &mdash;
-            minus the rush, plus a lot more tail-wagging. What began as a one-chair studio on
-            Santa Monica Blvd is now a small team of Fear Free&ndash;certified stylists, all
-            trained under her, still working out of that same West Hollywood storefront.
+            Groom Service started in 2019 when Talia Marsh, a color specialist who spent a decade
+            behind a salon chair, decided pets deserved a stay as considered as any five-star
+            hotel &mdash; minus the rush, plus a lot more tail-wagging. What began as a one-chair
+            studio on Santa Monica Blvd is now a small team of Fear Free&ndash;certified
+            concierges, all trained under her, still working out of that same West Hollywood
+            property.
           </p>
           <p className="mt-4 text-ink-soft">
             Every pet gets handled at their own pace &mdash; slower for the nervous ones, playful
@@ -55,11 +56,11 @@ export default function About() {
           className="relative mx-auto w-full max-w-sm rounded-3xl border-2 border-ink bg-ink p-8 text-cream"
         >
           <div className="flex items-center justify-between border-b border-dashed border-cream/25 pb-4">
-            <span className="font-mono text-[0.65rem] tracking-[0.3em] text-sunshine uppercase">Stylist ID</span>
-            <PawIcon className="h-5 w-5 text-berry" />
+            <span className="font-mono text-[0.65rem] tracking-[0.3em] text-gold uppercase">Staff Badge</span>
+            <PawIcon className="h-5 w-5 text-brass" />
           </div>
           <p className="mt-5 font-display text-2xl font-semibold">Talia Marsh</p>
-          <p className="font-mono text-xs text-cream/60">Founder &amp; Lead Stylist</p>
+          <p className="font-mono text-xs text-cream/60">Founder &amp; General Manager</p>
 
           <dl className="mt-6 space-y-3 font-mono text-xs">
             <div className="flex justify-between border-b border-cream/10 pb-2">
@@ -72,11 +73,11 @@ export default function About() {
             </div>
             <div className="flex justify-between">
               <dt className="text-cream/50">Status</dt>
-              <dd className="text-right text-sage">Now booking</dd>
+              <dd className="text-right text-sage">Welcoming guests</dd>
             </div>
           </dl>
 
-          <div className="absolute -right-4 -bottom-4 flex h-16 w-16 rotate-12 items-center justify-center rounded-full border-2 border-berry bg-ink font-mono text-[0.55rem] leading-tight text-berry">
+          <div className="absolute -right-4 -bottom-4 flex h-16 w-16 rotate-12 items-center justify-center rounded-full border-2 border-brass bg-ink font-mono text-[0.55rem] leading-tight text-brass">
             <span className="text-center">
               FEAR
               <br />

@@ -10,7 +10,7 @@ const svg = readFileSync(path.join(dir, "og-source.svg"));
 
 await sharp(svg, { density: 220 })
   .resize(1200, 630)
-  .flatten({ background: "#241a2c" })
+  .flatten({ background: "#15281f" })
   .png()
   .toFile(path.join(dir, "..", "public", "og-image.png"));
 

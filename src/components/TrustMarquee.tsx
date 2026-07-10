@@ -3,11 +3,11 @@ import PawIcon from "./PawIcon";
 const ITEMS = [
   "Fear Free Certified",
   "4.9★ on Google",
-  "Cage-Free Studio",
+  "Cage-Free Property",
   "Creative Color Certified",
   "Dogs & Cats Welcome",
   "Open 7 Days",
-  "Member Rebooking 96%",
+  "96% Returning Guests",
   "Est. 2019 · West Hollywood",
 ];
 
@@ -24,7 +24,7 @@ export default function TrustMarquee() {
                 key={`${copy}-${i}`}
                 className="flex items-center gap-3 px-6 font-display text-sm font-semibold tracking-wide whitespace-nowrap text-cream"
               >
-                <PawIcon className="h-4 w-4 text-sunshine" />
+                <PawIcon className="h-4 w-4 text-gold" />
                 {item}
               </li>
             ))}

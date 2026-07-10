@@ -1,29 +1,29 @@
 @import "tailwindcss";
 
 @theme {
-  /* Cream + ink, the studio backdrop */
-  --color-cream: #fbf5ec;
-  --color-cream-dim: #f2e6d6;
-  --color-ink: #241a2c;
-  --color-ink-soft: #6b5c6e;
+  /* Ivory + forest ink, the lobby backdrop */
+  --color-cream: #f6f1e4;
+  --color-cream-dim: #ece0c8;
+  --color-ink: #15281f;
+  --color-ink-soft: #5c6f65;
 
-  /* The palette, three signature dyes plus a highlight */
-  --color-berry: #e0447b;
-  --color-berry-dark: #b8215a;
-  --color-citrus: #ff8a3d;
-  --color-citrus-dark: #e56a1f;
-  --color-sage: #3f8f6e;
-  --color-sage-dark: #2c6b50;
-  --color-sunshine: #ffd23f;
+  /* Brass fittings, velvet rope, garden greenery, champagne highlight */
+  --color-brass: #ad7a1f;
+  --color-brass-dark: #8a611a;
+  --color-wine: #7a2e3b;
+  --color-wine-dark: #5c222c;
+  --color-sage: #4f7a63;
+  --color-sage-dark: #395a48;
+  --color-gold: #d9b65c;
 
   /* Structural */
-  --color-line: #e6d6c4;
-  --color-line-dark: #3a2c42;
+  --color-line: #ddceac;
+  --color-line-dark: #24382e;
 
   --font-display: "Fraunces", "Inter", serif;
   --font-body: "Inter", sans-serif;
   --font-mono: "Space Mono", monospace;
-  --font-caption: "Caveat", cursive;
+  --font-caption: "Fraunces", serif;
 
   --animate-marquee: marquee 30s linear infinite;
   --animate-marquee-slow: marquee 46s linear infinite;
@@ -90,7 +90,7 @@ body {
 }
 
 ::selection {
-  background-color: var(--color-berry);
+  background-color: var(--color-brass);
   color: var(--color-cream);
 }
 

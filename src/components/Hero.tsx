@@ -3,8 +3,8 @@ import PawIcon from "./PawIcon";
 import { StarIcon } from "./ServiceIcons";
 
 const STATS = [
-  { value: "4.9", label: "avg. rating" },
-  { value: "18k+", label: "grooms done" },
+  { value: "4.9", label: "guest rating" },
+  { value: "18k+", label: "stays hosted" },
   { value: "2019", label: "est. in WeHo" },
 ];
 
@@ -18,12 +18,12 @@ export default function Hero() {
       />
       <div
         className="animate-blob-delay pointer-events-none absolute top-52 -left-32 h-80 w-80 opacity-25 blur-3xl"
-        style={{ background: "var(--color-sunshine)" }}
+        style={{ background: "var(--color-gold)" }}
         aria-hidden="true"
       />
       <div
         className="animate-blob pointer-events-none absolute bottom-0 left-1/3 h-64 w-64 opacity-20 blur-3xl"
-        style={{ background: "var(--color-berry)" }}
+        style={{ background: "var(--color-brass)" }}
         aria-hidden="true"
       />
 
@@ -36,22 +36,23 @@ export default function Hero() {
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-line bg-cream-dim px-4 py-1.5 font-mono text-xs tracking-wide text-ink-soft"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-sage" />
-            NOW BOOKING &middot; WEST HOLLYWOOD, CA
+            NOW ACCEPTING RESERVATIONS &middot; WEST HOLLYWOOD, CA
           </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display text-5xl leading-[1.03] font-semibold tracking-tight text-ink sm:text-6xl md:text-[3.8rem]"
+            className="font-display text-5xl leading-[1.03] font-semibold tracking-tight text-ink sm:text-6xl md:text-[3.4rem]"
           >
-            Groom
+            Check in scruffy.
             <br />
+            Check out{" "}
             <span className="relative inline-block">
-              boldly
+              fabulous
               <svg
                 viewBox="0 0 260 20"
-                className="absolute -bottom-2 left-0 w-full text-berry"
+                className="absolute -bottom-2 left-0 w-full text-brass"
                 preserveAspectRatio="none"
                 aria-hidden="true"
               >
@@ -65,9 +66,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.18 }}
-            className="mt-4 font-caption text-2xl text-berry-dark"
+            className="mt-4 font-caption text-2xl text-brass-dark italic"
           >
-            Where every coat is a canvas.
+            A five-star stay for your best friend.
           </motion.p>
 
           <motion.p
@@ -76,10 +77,10 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.28 }}
             className="mt-5 max-w-md font-body text-lg text-ink-soft"
           >
-            Pawlette is the creative grooming studio for dogs and cats who
-            deserve more than a rushed bath. Fear Free&ndash;certified
-            handling, breed-savvy stylists, and a little bit of color magic
-            for the pets who want to stand out.
+            Groom Service is the boutique grooming hotel for dogs and cats
+            who deserve more than a rushed bath. Fear Free&ndash;certified
+            concierges, five-star reviews, and a suite built around every
+            coat and temperament.
           </motion.p>
 
           <motion.div
@@ -90,15 +91,15 @@ export default function Hero() {
           >
             <a
               href="#book"
-              className="rounded-full bg-ink px-7 py-3.5 font-display text-sm font-semibold tracking-wide text-cream transition-transform hover:-translate-y-0.5 hover:bg-berry-dark"
+              className="rounded-full bg-ink px-7 py-3.5 font-display text-sm font-semibold tracking-wide text-cream transition-transform hover:-translate-y-0.5 hover:bg-brass-dark"
             >
-              Book a groom
+              Reserve a stay
             </a>
             <a
               href="#membership"
               className="rounded-full border-2 border-ink/15 px-7 py-3.5 font-display text-sm font-semibold tracking-wide text-ink transition-colors hover:border-sage hover:text-sage-dark"
             >
-              See membership
+              Loyalty perks
             </a>
           </motion.div>
 
@@ -126,14 +127,14 @@ export default function Hero() {
           <div
             className="animate-blob absolute -inset-6 opacity-70"
             style={{
-              background: "linear-gradient(135deg, var(--color-berry) 0%, var(--color-sunshine) 50%, var(--color-sage) 100%)",
+              background: "linear-gradient(135deg, var(--color-brass) 0%, var(--color-gold) 50%, var(--color-sage) 100%)",
             }}
             aria-hidden="true"
           />
           <div className="relative overflow-hidden rounded-[2.5rem] border-4 border-ink bg-cream-dim shadow-[0_24px_60px_-20px_rgba(36,26,44,0.45)]">
             <img
               src="https://placedog.net/640/760?id=41"
-              alt="A freshly groomed dog with a bright, styled coat at a Pawlette studio"
+              alt="A freshly groomed dog with a bright, styled coat at a Groom Service property"
               className="aspect-[4/5] w-full object-cover"
             />
           </div>
@@ -144,7 +145,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.7 }}
             className="animate-float absolute -top-5 -left-8 flex items-center gap-2 rounded-2xl border-2 border-ink bg-cream px-4 py-3 shadow-[0_10px_24px_-8px_rgba(36,26,44,0.35)]"
           >
-            <div className="flex text-berry">
+            <div className="flex text-brass">
               {Array.from({ length: 5 }).map((_, i) => (
                 <StarIcon key={i} className="h-3.5 w-3.5" />
               ))}
@@ -159,7 +160,7 @@ export default function Hero() {
             className="animate-float absolute -right-6 -bottom-6 flex items-center gap-2 rounded-2xl border-2 border-ink bg-ink px-4 py-3 text-cream shadow-[0_10px_24px_-8px_rgba(36,26,44,0.45)]"
             style={{ animationDelay: "1.2s" }}
           >
-            <PawIcon className="h-5 w-5 text-sunshine" />
+            <PawIcon className="h-5 w-5 text-gold" />
             <span className="font-mono text-xs font-bold tracking-wide">
               Fear Free
               <br />

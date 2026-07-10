@@ -11,9 +11,9 @@ type Stat = {
 };
 
 const STATS: Stat[] = [
-  { value: 4.9, decimals: 1, suffix: "★", label: "average studio rating" },
-  { value: 18, suffix: "k+", label: "grooms completed" },
-  { value: 2300, suffix: "+", label: "five-star reviews" },
+  { value: 4.9, decimals: 1, suffix: "★", label: "average guest rating" },
+  { value: 18, suffix: "k+", label: "stays hosted" },
+  { value: 2300, suffix: "+", label: "guestbook reviews" },
   { value: 2019, label: "founded in West Hollywood", static: true },
 ];
 

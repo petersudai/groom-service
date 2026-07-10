@@ -9,7 +9,7 @@ type Pair = {
 // Same photo on both sides of the divider, on purpose — the "before" is a
 // color-graded version of the identical image, not a different dog. That
 // guarantees continuity while these are sample/placeholder shots; a real
-// studio would swap in matched before/after photos of the same visit.
+// property would swap in matched arrival-and-departure photos of the same stay.
 const PAIRS: Pair[] = [
   { photo: "https://placedog.net/700/700?id=25", label: "Deshed & full groom" },
   { photo: "https://placedog.net/700/700?id=54", label: "Bold color styling" },
@@ -47,23 +47,23 @@ function Slider({ pair }: { pair: Pair }) {
     >
       <img
         src={pair.photo}
-        alt="After grooming (sample photo)"
+        alt="Departure — after grooming (sample photo)"
         className="absolute inset-0 h-full w-full object-cover saturate-[1.2] contrast-[1.08] brightness-[1.03]"
         draggable={false}
       />
       <div className="absolute inset-0 overflow-hidden" style={{ clipPath: `inset(0 ${100 - split}% 0 0)` }}>
         <img
           src={pair.photo}
-          alt="Before grooming (sample photo)"
+          alt="Arrival — before grooming (sample photo)"
           className="h-full w-full object-cover grayscale-[65%] brightness-[0.82] contrast-[0.95]"
           draggable={false}
         />
         <span className="absolute top-4 left-4 rounded-full bg-ink/80 px-3 py-1 font-mono text-[0.65rem] tracking-widest text-cream uppercase backdrop-blur-sm">
-          Before
+          Arrival
         </span>
       </div>
       <span className="absolute top-4 right-4 rounded-full bg-cream/85 px-3 py-1 font-mono text-[0.65rem] tracking-widest text-ink uppercase backdrop-blur-sm">
-        After
+        Departure
       </span>
 
       <div className="pointer-events-none absolute inset-y-0" style={{ left: `${split}%` }}>
@@ -87,11 +87,11 @@ export default function BeforeAfterSlider() {
     <section className="bg-cream-dim px-6 py-24 md:px-10 md:py-32">
       <div className="mx-auto max-w-6xl">
         <div className="mb-14 max-w-xl">
-          <span className="font-mono text-xs tracking-[0.25em] text-berry-dark uppercase">The Transformation</span>
-          <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight md:text-5xl">Drag to see the difference.</h2>
+          <span className="font-mono text-xs tracking-[0.25em] text-brass-dark uppercase">Arrival &amp; Departure</span>
+          <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight md:text-5xl">Drag to see the checkout glow-up.</h2>
           <p className="mt-4 text-ink-soft">
-            Sample photos shown below &mdash; every studio swaps these for real before-and-after
-            shots from its own visits. Slide across to see how it works.
+            Sample photos shown below &mdash; every property swaps these for real arrival-and-departure
+            shots from its own guests. Slide across to see how it works.
           </p>
         </div>
 

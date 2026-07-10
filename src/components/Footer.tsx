@@ -13,36 +13,36 @@ export default function Footer() {
               <Logo variant="dark" />
             </div>
             <p className="mt-4 max-w-xs text-sm text-cream/50">
-              The creative grooming studio for modern pets. Fear Free certified, one storefront on Santa Monica Blvd.
+              The boutique grooming hotel for modern pets. Fear Free certified, one property on Santa Monica Blvd.
             </p>
           </div>
 
           <div>
-            <p className="font-mono text-xs tracking-widest text-cream/40 uppercase">Studio</p>
+            <p className="font-mono text-xs tracking-widest text-cream/40 uppercase">Property</p>
             <nav className="mt-4 flex flex-col gap-2.5 text-sm">
-              <a href="#services" className="hover:text-sunshine">Services</a>
-              <a href="#membership" className="hover:text-sunshine">Membership</a>
-              <a href="#gallery" className="hover:text-sunshine">Gallery</a>
-              <a href="#about" className="hover:text-sunshine">About</a>
-              <a href="#reviews" className="hover:text-sunshine">Reviews</a>
+              <a href="#services" className="hover:text-gold">The Suites</a>
+              <a href="#membership" className="hover:text-gold">Loyalty Program</a>
+              <a href="#gallery" className="hover:text-gold">Gallery</a>
+              <a href="#about" className="hover:text-gold">Our Story</a>
+              <a href="#reviews" className="hover:text-gold">Guestbook</a>
             </nav>
           </div>
 
           <div>
             <p className="font-mono text-xs tracking-widest text-cream/40 uppercase">Company</p>
             <nav className="mt-4 flex flex-col gap-2.5 text-sm">
-              <a href="#visit" className="hover:text-sunshine">Visit the studio</a>
-              <a href="#book" className="hover:text-sunshine">Book an appointment</a>
-              <a href="mailto:hello@pawlette.com" className="hover:text-sunshine">Franchise &amp; multi-location inquiries</a>
-              <a href="mailto:hello@pawlette.com" className="hover:text-sunshine">Careers</a>
+              <a href="#visit" className="hover:text-gold">Visit the property</a>
+              <a href="#book" className="hover:text-gold">Reserve a stay</a>
+              <a href="mailto:hello@groomservice.co" className="hover:text-gold">Franchise &amp; multi-location inquiries</a>
+              <a href="mailto:hello@groomservice.co" className="hover:text-gold">Careers</a>
             </nav>
           </div>
 
           <div>
             <p className="font-mono text-xs tracking-widest text-cream/40 uppercase">Get the scoop</p>
-            <p className="mt-4 text-sm text-cream/50">Grooming tips, new studio openings, and the occasional good-dog photo.</p>
+            <p className="mt-4 text-sm text-cream/50">Grooming tips, new property openings, and the occasional good-dog photo.</p>
             {submitted ? (
-              <p className="mt-3 font-display text-sm font-semibold text-sunshine">You&rsquo;re on the list. 🐾</p>
+              <p className="mt-3 font-display text-sm font-semibold text-gold">You&rsquo;re on the list. 🐾</p>
             ) : (
               <form
                 className="mt-3 flex gap-2"
@@ -56,11 +56,11 @@ export default function Footer() {
                   required
                   placeholder="you@email.com"
                   aria-label="Email address"
-                  className="min-w-0 flex-1 rounded-full border border-cream/20 bg-cream/5 px-4 py-2.5 text-sm text-cream placeholder:text-cream/35 focus:border-sunshine focus:outline-none"
+                  className="min-w-0 flex-1 rounded-full border border-cream/20 bg-cream/5 px-4 py-2.5 text-sm text-cream placeholder:text-cream/35 focus:border-gold focus:outline-none"
                 />
                 <button
                   type="submit"
-                  className="shrink-0 rounded-full bg-cream px-4 py-2.5 font-display text-xs font-bold tracking-wide text-ink transition-colors hover:bg-sunshine"
+                  className="shrink-0 rounded-full bg-cream px-4 py-2.5 font-display text-xs font-bold tracking-wide text-ink transition-colors hover:bg-gold"
                 >
                   Join
                 </button>
@@ -70,11 +70,11 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col gap-6 pt-8 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-mono text-xs text-cream/40">&copy; {new Date().getFullYear()} Pawlette Grooming Co.</p>
+          <p className="font-mono text-xs text-cream/40">&copy; {new Date().getFullYear()} Groom Service Hospitality Co.</p>
           <nav className="flex flex-wrap gap-x-6 gap-y-2 font-mono text-xs tracking-wide">
-            <a href="#" className="hover:text-sunshine">Instagram</a>
-            <a href="#" className="hover:text-sunshine">TikTok</a>
-            <a href="#" className="hover:text-sunshine">Facebook</a>
+            <a href="#" className="hover:text-gold">Instagram</a>
+            <a href="#" className="hover:text-gold">TikTok</a>
+            <a href="#" className="hover:text-gold">Facebook</a>
           </nav>
         </div>
       </div>

@@ -48,9 +48,9 @@ export default function FloatingBook() {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 20, scale: 0.9 }}
           transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed right-5 bottom-5 z-40 rounded-full bg-berry px-6 py-3.5 font-display text-sm font-semibold tracking-wide text-cream shadow-[0_12px_28px_-8px_rgba(224,68,123,0.6)] md:hidden"
+          className="fixed right-5 bottom-5 z-40 rounded-full bg-brass px-6 py-3.5 font-display text-sm font-semibold tracking-wide text-cream shadow-[0_12px_28px_-8px_rgba(224,68,123,0.6)] md:hidden"
         >
-          Book Now
+          Reserve Now
         </motion.a>
       )}
     </AnimatePresence>

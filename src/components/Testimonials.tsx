@@ -23,7 +23,7 @@ const REVIEWS = [
     city: "Silver Lake, CA",
   },
   {
-    quote: "The membership pays for itself. I stopped tracking appointments and just show up — they text me first.",
+    quote: "The loyalty program pays for itself. I stopped tracking appointments and just show up — they text me first.",
     name: "Owen K.",
     pet: "Peaches, Tabby cat",
     city: "Culver City, CA",
@@ -36,11 +36,11 @@ export default function Testimonials() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-14 flex flex-wrap items-end justify-between gap-6">
           <div className="max-w-xl">
-            <span className="font-mono text-xs tracking-[0.25em] text-berry-dark uppercase">Word on the Street</span>
-            <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight md:text-5xl">Regulars talk.</h2>
+            <span className="font-mono text-xs tracking-[0.25em] text-brass-dark uppercase">From the Guestbook</span>
+            <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight md:text-5xl">Guests check out happy.</h2>
           </div>
           <div className="flex items-center gap-2 rounded-full border-2 border-ink/10 bg-cream-dim px-5 py-2.5">
-            <div className="flex text-berry">
+            <div className="flex text-brass">
               {Array.from({ length: 5 }).map((_, i) => (
                 <StarIcon key={i} className="h-4 w-4" />
               ))}
@@ -60,7 +60,7 @@ export default function Testimonials() {
               className="paper-edge flex flex-col justify-between rounded-2xl border-2 border-ink/10 bg-cream-dim p-6"
             >
               <div>
-                <div className="flex gap-1 text-berry">
+                <div className="flex gap-1 text-brass">
                   {Array.from({ length: 5 }).map((_, idx) => (
                     <StarIcon key={idx} className="h-4 w-4" />
                   ))}

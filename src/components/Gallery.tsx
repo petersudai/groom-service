@@ -9,13 +9,13 @@ type Photo = {
 const PHOTOS: Photo[] = [
   { src: "https://placedog.net/500/650?id=3", caption: "Fresh from the tub", aspect: "aspect-[4/5]" },
   { src: "https://cataas.com/cat?position=center&d=1", caption: "Someone's a good boy (cat edition)", aspect: "aspect-square" },
-  { src: "https://placedog.net/500/700?id=7", caption: "Style Studio color day", aspect: "aspect-[3/4]" },
+  { src: "https://placedog.net/500/700?id=7", caption: "Penthouse color day", aspect: "aspect-[3/4]" },
   { src: "https://placedog.net/500/560?id=11", caption: "Tail wags guaranteed", aspect: "aspect-[5/4]" },
   { src: "https://cataas.com/cat?position=center&d=2", caption: "Fluffed, brushed, unbothered", aspect: "aspect-[4/5]" },
-  { src: "https://placedog.net/500/650?id=22", caption: "Ready for pickup", aspect: "aspect-[4/5]" },
+  { src: "https://placedog.net/500/650?id=22", caption: "Ready for checkout", aspect: "aspect-[4/5]" },
   { src: "https://placedog.net/500/560?id=14", caption: "First color session", aspect: "aspect-[5/4]" },
   { src: "https://placedog.net/500/700?id=9", caption: "Not a bad angle in sight", aspect: "aspect-[3/4]" },
-  { src: "https://cataas.com/cat?position=center&d=3", caption: "Studio regular", aspect: "aspect-square" },
+  { src: "https://cataas.com/cat?position=center&d=3", caption: "Frequent guest", aspect: "aspect-square" },
   { src: "https://placedog.net/500/650?id=26", caption: "Bath time hero", aspect: "aspect-[4/5]" },
 ];
 
@@ -25,13 +25,13 @@ export default function Gallery() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-14 flex flex-wrap items-end justify-between gap-6">
           <div className="max-w-xl">
-            <span className="font-mono text-xs tracking-[0.25em] text-sage-dark uppercase">Fresh Cuts</span>
-            <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight md:text-5xl">Straight off the table.</h2>
+            <span className="font-mono text-xs tracking-[0.25em] text-sage-dark uppercase">Recent Departures</span>
+            <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight md:text-5xl">Straight from checkout.</h2>
           </div>
           <p className="max-w-xs text-sm text-ink-soft">
-            A few recent walk-outs from the West Hollywood studio. Follow{" "}
-            <a href="#" className="font-semibold text-berry-dark underline decoration-2 underline-offset-2">
-              @pawlette
+            A few recent guests from the West Hollywood property. Follow{" "}
+            <a href="#" className="font-semibold text-brass-dark underline decoration-2 underline-offset-2">
+              @groomservice
             </a>{" "}
             for the daily lineup.
           </p>
@@ -55,7 +55,7 @@ export default function Gallery() {
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <figcaption className="absolute inset-x-0 bottom-0 translate-y-full bg-gradient-to-t from-ink/85 to-transparent px-4 pt-8 pb-3 font-caption text-lg text-cream transition-transform duration-300 group-hover:translate-y-0">
+              <figcaption className="absolute inset-x-0 bottom-0 translate-y-full bg-gradient-to-t from-ink/85 to-transparent px-4 pt-8 pb-3 font-caption text-lg text-cream italic transition-transform duration-300 group-hover:translate-y-0">
                 {photo.caption}
               </figcaption>
             </motion.figure>

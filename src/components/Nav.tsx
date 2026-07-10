@@ -3,11 +3,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import Logo from "./Logo";
 
 const LINKS = [
-  { href: "#services", label: "Services" },
+  { href: "#services", label: "The Suites" },
   { href: "#gallery", label: "Gallery" },
-  { href: "#about", label: "About" },
-  { href: "#reviews", label: "Reviews" },
-  { href: "#visit", label: "Visit" },
+  { href: "#about", label: "Our Story" },
+  { href: "#reviews", label: "Guestbook" },
+  { href: "#visit", label: "Front Desk" },
 ];
 
 export default function Nav() {
@@ -46,7 +46,7 @@ export default function Nav() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="relative py-1 transition-colors hover:text-berry-dark after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-0 after:bg-berry after:transition-all after:duration-300 hover:after:w-full"
+                className="relative py-1 transition-colors hover:text-brass-dark after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-0 after:bg-brass after:transition-all after:duration-300 hover:after:w-full"
               >
                 {link.label}
               </a>
@@ -56,9 +56,9 @@ export default function Nav() {
         <div className="flex items-center gap-3">
           <a
             href="#book"
-            className="hidden rounded-full border-2 border-ink bg-ink px-5 py-2 font-display text-xs font-bold tracking-wide text-cream transition-colors hover:bg-berry hover:border-berry sm:inline-block"
+            className="hidden rounded-full border-2 border-ink bg-ink px-5 py-2 font-display text-xs font-bold tracking-wide text-cream transition-colors hover:bg-brass hover:border-brass sm:inline-block"
           >
-            Book Now
+            Reserve Now
           </a>
           <button
             type="button"
@@ -98,8 +98,8 @@ export default function Nav() {
                 </li>
               ))}
               <li>
-                <a href="#book" onClick={() => setOpen(false)} className="mt-1 block py-2 text-berry-dark">
-                  Book Now &rarr;
+                <a href="#book" onClick={() => setOpen(false)} className="mt-1 block py-2 text-brass-dark">
+                  Reserve Now &rarr;
                 </a>
               </li>
             </ul>

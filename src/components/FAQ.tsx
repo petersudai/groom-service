@@ -5,15 +5,15 @@ import { ChevronIcon } from "./ServiceIcons";
 const FAQS = [
   {
     q: "Do you groom cats too?",
-    a: "Yes — every studio is set up for both dogs and cats, with stylists trained specifically in low-stress cat handling.",
+    a: "Yes — every property is set up for both dogs and cats, with concierges trained specifically in low-stress cat handling.",
   },
   {
     q: "What if my pet is anxious or reactive?",
-    a: "That's exactly what Fear Free certification is for. We slow down, use calming handling techniques, and if needed, split a groom across two shorter visits instead of one stressful one.",
+    a: "That's exactly what Fear Free certification is for. We slow down, use calming handling techniques, and if needed, split a stay across two shorter visits instead of one stressful one.",
   },
   {
-    q: "How does membership billing work?",
-    a: "Memberships bill monthly to the card on file and can be paused or cancelled anytime from your account — no contracts, no cancellation fees.",
+    q: "How does the loyalty program billing work?",
+    a: "The program bills monthly to the card on file and can be paused or cancelled anytime from your account — no contracts, no cancellation fees.",
   },
   {
     q: "Can I bring my own shampoo or products?",
@@ -25,7 +25,7 @@ const FAQS = [
   },
   {
     q: "What's your cancellation policy?",
-    a: "We ask for 24 hours' notice. Members get one grace no-show per quarter, no questions asked.",
+    a: "We ask for 24 hours' notice. Loyalty program guests get one grace no-show per quarter, no questions asked.",
   },
 ];
 
@@ -36,7 +36,7 @@ export default function FAQ() {
     <section className="bg-cream-dim px-6 py-24 md:px-10 md:py-32">
       <div className="mx-auto max-w-3xl">
         <div className="mb-12 text-center">
-          <span className="font-mono text-xs tracking-[0.25em] text-berry-dark uppercase">FAQ</span>
+          <span className="font-mono text-xs tracking-[0.25em] text-brass-dark uppercase">Front Desk FAQ</span>
           <h2 className="mt-3 font-display text-4xl font-semibold tracking-tight md:text-5xl">Questions, answered.</h2>
         </div>
 
