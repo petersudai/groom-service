@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#241a2c" />
+      <stop offset="100%" stop-color="#2f2138" />
+    </linearGradient>
+    <radialGradient id="glowBerry" cx="0.85" cy="0.15" r="0.6">
+      <stop offset="0%" stop-color="#e0447b" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#e0447b" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowSage" cx="0.08" cy="0.9" r="0.6">
+      <stop offset="0%" stop-color="#3f8f6e" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#3f8f6e" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#glowBerry)" />
+  <rect width="1200" height="630" fill="url(#glowSage)" />
+
+  <g transform="translate(90 175)">
+    <circle cx="60" cy="60" r="56" fill="none" stroke="#fbf5ec" stroke-width="2" stroke-dasharray="5 5" opacity="0.5" />
+    <ellipse cx="60" cy="71" rx="20.5" ry="16.3" fill="#fbf5ec" />
+    <ellipse cx="34.5" cy="43" rx="9" ry="11.4" fill="#e0447b" transform="rotate(-18 34.5 43)" />
+    <ellipse cx="55" cy="29" rx="9.7" ry="12" fill="#ffd23f" transform="rotate(-4 55 29)" />
+    <ellipse cx="75" cy="31.2" rx="9.7" ry="12" fill="#3f8f6e" transform="rotate(10 75 31.2)" />
+    <ellipse cx="91" cy="49" rx="9" ry="11.4" fill="#ff8a3d" transform="rotate(24 91 49)" />
+  </g>
+
+  <text x="90" y="420" font-family="Georgia, 'Times New Roman', serif" font-size="112" font-weight="600" fill="#fbf5ec">Pawlette</text>
+  <text x="94" y="472" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-style="italic" fill="#ffd23f">Groom Boldly.</text>
+  <text x="94" y="540" font-family="'Courier New', monospace" font-size="24" letter-spacing="4" fill="#fbf5ec" opacity="0.7">FEAR FREE CERTIFIED &#183; WEST HOLLYWOOD, CA</text>
+</svg>

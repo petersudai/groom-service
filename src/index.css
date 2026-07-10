@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  /* Cream + ink, the studio backdrop */
+  --color-cream: #fbf5ec;
+  --color-cream-dim: #f2e6d6;
+  --color-ink: #241a2c;
+  --color-ink-soft: #6b5c6e;
+
+  /* The palette, three signature dyes plus a highlight */
+  --color-berry: #e0447b;
+  --color-berry-dark: #b8215a;
+  --color-citrus: #ff8a3d;
+  --color-citrus-dark: #e56a1f;
+  --color-sage: #3f8f6e;
+  --color-sage-dark: #2c6b50;
+  --color-sunshine: #ffd23f;
+
+  /* Structural */
+  --color-line: #e6d6c4;
+  --color-line-dark: #3a2c42;
+
+  --font-display: "Fraunces", "Inter", serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "Space Mono", monospace;
+  --font-caption: "Caveat", cursive;
+
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-marquee-slow: marquee 46s linear infinite;
+  --animate-blob: blob 14s ease-in-out infinite;
+  --animate-blob-delay: blob 14s ease-in-out infinite -7s;
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes blob {
+  0%,
+  100% {
+    border-radius: 42% 58% 65% 35% / 45% 40% 60% 55%;
+    transform: rotate(0deg) scale(1);
+  }
+  33% {
+    border-radius: 62% 38% 45% 55% / 55% 60% 40% 45%;
+    transform: rotate(6deg) scale(1.04);
+  }
+  66% {
+    border-radius: 38% 62% 55% 45% / 40% 45% 55% 60%;
+    transform: rotate(-4deg) scale(0.98);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: var(--color-berry);
+  color: var(--color-cream);
+}
+
+/* Torn-paper edge, used wherever a card wants to feel hand-finished */
+.paper-edge {
+  position: relative;
+}
+.paper-edge::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -1px;
+  height: 1px;
+  background-image: radial-gradient(circle, var(--color-cream) 1.5px, transparent 1.6px);
+  background-size: 10px 3px;
+  background-repeat: repeat-x;
+}
+
+.blob {
+  transition: border-radius 1s ease-in-out;
+}
